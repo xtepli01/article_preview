@@ -2,34 +2,188 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  
-  <title>Practice 4</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Practice 4 - Blog Carousel</title>
 </head>
 <body>
-  <div class="ad">
-    <div class="image_ad"> <img src="assets/images/blog_image.png" alt="alphabet_ads" class="blog_image"> </div>
-    <h2 class="title"> Waymo is A Trillion-Dollar Opportunity. Google Just Needs to Seize It</h2>
 
-    <h5 class="description">
-      The self-driving tech unit is expanding but if Alphabet
-      pushed harder, Waymo could dominate a new market with
-      the potential to generate more revenue than its ad
-      business.</h5>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+
+    <div class="carousel-inner">
+      <div class="carousel-track">
+      
+      <!-- Slide 1: Desktop View -->
+      <div class="carousel-slide1">
+        <article class="article">
+          <div class="image">
+            <img src="assets/images/blog_image.png" alt="Waymo self-driving car">
+          </div>
+          
+          <div class="text-container">
+            <h1 class="title">
+              Waymo Is A Trillion-Dollar<br>
+              Opportunity. Google Just Needs To<br>
+              Seize It
+            </h1>
+
+            <p class="description">
+              The self-driving tech unit is expanding but if Alphabet<br>
+              pushed harder, Waymo could dominate a new market with<br>
+              the potential to generate more revenue than its ad<br>
+              business.
+            </p>
+
+            <div class="button-container-desktop">
+              <div class="avatar">
+                <img src="assets/images/avatar_male.png" alt="Oleksandr Tepliakov avatar">
+              </div>
+              <div class="user-info">
+                <div class="name">Oleksandr</div>
+                <div class="date">01 Sept 2026</div>
+              </div>
+              <div class="container-desktop">
+                <div class="share-desktop" aria-label="Share article">
+                  <img src="assets/icons/share.svg" alt="">
+                  <div class="hide-desktop">
+                    <p>SHARE</p>
+                    <ul class="icons-desktop">
+                      <li>
+                        <img src="assets/icons/facebook.svg" alt="facebook">
+                      </li>
+                      <li>
+                        <img src="assets/icons/twitter.svg" alt="twitter">
+                      </li>
+                      <li>
+                        <img src="assets/icons/pinterest.svg" alt="pinterest">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 2: Tablet View -->
+      <div class="carousel-slide2">
+        <article class="article-tablet">
+          <div class="tablet-container">
+            <div class="clipped-image">
+              <img src="assets/images/blog_image.png" alt="Waymo self-driving technology">
+            </div>
+          </div>
+          
+          <div class="text-container-tablet">
+            <h1 class="title-tablet">
+              Waymo Is A Trillion-Dollar<br>
+              Opportunity. Google Just<br>
+              Needs To Seize It
+            </h1>
+            
+            <p class="description-tablet">
+              The self-driving tech unit is expanding but if<br>
+              Alphabet pushed harder, Waymo could dominate a<br>
+              new market with the potential to generate more<br>
+              revenue than its ad business.
+            </p>
+            
+            <div class="button-container-tablet">
+              <div class="avatar-tablet">
+                <img src="assets/images/avatar_male.png" alt="Oleksandr Tepliakov avatar">
+              </div>
+              <div class="user-info-tablet">
+                <div class="name-tablet">Oleksandr</div>
+                <div class="date-tablet">15 Sept 2026</div>
+              </div>
+              <div class="container-tablet">
+                <div class="share-tablet" aria-label="Share article">
+                  <img src="assets/icons/share.svg" alt="">
+                  <div class="hide-tablet">
+                    <p>SHARE</p>
+                    <ul class="icons-tablet">
+                      <li>
+                        <img src="assets/icons/facebook.svg" alt="facebook">
+                      </li>
+                      <li>
+                        <img src="assets/icons/twitter.svg" alt="twitter">
+                      </li>
+                      <li>
+                        <img src="assets/icons/pinterest.svg" alt="pinterest">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 3: Mobile View -->
+      <div class="carousel-slide3">
+        <article class="article-mobile">
+          <div class="mobile-container">
+            <div class="clipped-mobile">
+              <img src="assets/images/blog_image.png" alt="Waymo self-driving technology">
+            </div>
+          </div>
+
+          <div class="text-container-mobile">
+            <h1 class="title-mobile">
+              Waymo Is A Trillion-Dollar<br>
+              Opportunity. Google Just<br>
+              Seize It
+            </h1>
+            
+            <p class="description-mobile">
+              The self-driving tech unit is expanding but<br>
+              if Alphabet pushed harder, Waymo could<br>
+              dominate a new market with the potential<br>
+              to generate more revenue than its ad<br>
+              business.
+            </p>
+
+            <div class="button-container-mobile">
+              <div class="avatar-mobile">
+                <img src="assets/images/avatar_male.png" alt="Oleksandr Tepliakov avatar">
+              </div>
+              <div class="user-info-mobile">
+                <div class="name-mobile">Oleksandr</div>
+                <div class="date-mobile">15 Sept 2026</div>
+              </div>
+              <div class="container-mobile">
+                <button class="share-mobile" aria-label="Share article">
+                  <img src="assets/icons/share.svg" alt="">
+                </button>
+                  <div class="hide-mobile">
+                    <p>SHARE</p>
+                    <ul class="icons-mobile">
+                      <li>
+                        <img src="assets/icons/facebook.svg" alt="facebook">
+                      </li>
+                      <li>
+                        <img src="assets/icons/twitter.svg" alt="twitter">
+                      </li>
+                      <li>
+                        <img src="assets/icons/pinterest.svg" alt="pinterest">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+    </div>
+
+    <button class="carousel-btn next" aria-label="Next slide">›</button>
   </div>
-
-  <div class="footer">
-    <div class="image_avatar"> <img src="assets/images/avatar_male.png" alt="alphabet_ads" class="blog_image"> </div>
-    <h5 class="name/surname">Oleksandr Tepliakov</h5>
-    <h5 class="data">01 Sept 2026</h5>
-  </div>
-
 </body>
 </html>
